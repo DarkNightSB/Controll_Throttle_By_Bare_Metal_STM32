@@ -34,14 +34,14 @@ Tất cả GND nối chung một điểm (nguồn 12 V, BTS7960, Blue Pill, `E2`
 | Khối | Từ | Đến |
 |---|---|---|
 | Bàn đạp | Chân giữa biến trở | **PA1** |
-| VTA1 | Dây `VTA` | 20 kΩ → **PA3**; PA3 → 10 kΩ → GND; PA3 → 100 nF → GND |
-| VTA2 | Dây `VTA2` | 20 kΩ → **PB0**; PB0 → 10 kΩ → GND; PB0 → 100 nF → GND |
+| VTA1 | Dây `VTA` | 20 kΩ → **PA3**; PA3 → 10 kΩ → GND; PA3 → GND |
+| VTA2 | Dây `VTA2` | 20 kΩ → **PB0**; PB0 → 10 kΩ → GND; PB0 → GND |
 | Cảm biến | `VC` / `E2` | 5V Blue Pill / GND |
 | BTS7960 | `RPWM` (đóng) | **PB8** (TIM4_CH3) |
 | BTS7960 | `LPWM` (mở) | **PB9** (TIM4_CH4) |
 | BTS7960 | `R_EN` / `L_EN` | **PA8** / **PA11**, mỗi chân kèm 10 kΩ xuống GND |
 | BTS7960 | `VCC` | 3V3 |
-| BTS7960 | `B+` / `B−` | 12 V (+) / (−), thêm tụ 470 đến 1000 µF sát module |
+| BTS7960 | `B+` / `B−` | 12 V (+) / (−),|
 | BTS7960 | `M+`, `M−` | Hai dây mô-tơ bướm ga |
 | UART | PA9 (TX), PA10 (RX) | RX, TX của USB-TTL (115200, 8N1) |
 
